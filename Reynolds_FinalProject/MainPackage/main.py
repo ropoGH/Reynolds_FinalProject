@@ -11,3 +11,5 @@ from io import BytesIO
 
 #Retrieving the place to go for group picture
 getPlace()
+
+
