@@ -1,13 +1,19 @@
 '''
-Created on Dec 1, 2022
-
-@author: Roger
+Name: Roger Poduska
+email: poduskrd@mail.uc.edu
+Assignment: Final Project
+Course: IS 4010
+Semester/Year: Fall 2022
+Brief Description: Contains functions to decrypt hint and display our photo
+Citations: N/a
+Anything else that's relevant: N/a
 '''
 import json
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 import os, sys
 #import requests
 from io import BytesIO
+from fileinput import filename
 
 def getPlace():    
     with open('EncryptedGroupHints.json') as json_file:
@@ -36,11 +42,17 @@ def getPlace():
         decoded_location = [data_into_list[int(x)] for x in encrypt['Reynolds']]
         print(decoded_location)
         
-def load_groupPicture( filename ) :
+def display_groupPicture( filename ) :
     
     try:
         myimage = Image.open(filename)
         myimage.load()
-        return myimage
     except:
         return None
+    
+    myimage.show()
+
+
+
+    
+    
