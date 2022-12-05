@@ -19,4 +19,4 @@ from io import BytesIO
 getPlace()
 
 #Capturing our image to show to screen
-groupImage = display_groupPicture("Reynolds_Photo.jpg")
+display_groupPicture("Reynolds_Photo.jpg")
