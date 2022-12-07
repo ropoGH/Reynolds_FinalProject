@@ -1,6 +1,6 @@
 '''
-Name: Roger Poduska
-email: poduskrd@mail.uc.edu
+Name: Roger Poduska, Ben Marquis, Dana Garadah, Evan Sasowsky
+email: poduskrd@mail.uc.edu, marquibm@mail.uc.edu, garadada@mail.uc.edu, sasowser@mail.uc.edu
 Assignment: Final Project
 Course: IS 4010
 Semester/Year: Fall 2022
@@ -19,4 +19,4 @@ from io import BytesIO
 getPlace()
 
 #Capturing our image to show to screen
-groupImage = display_groupPicture("Reynolds_Photo.jpg")
+display_groupPicture("Reynolds_Photo.jpg")
